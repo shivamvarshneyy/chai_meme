@@ -17,8 +17,9 @@
     --bg: rgb(249 249 255);
     --black: #212529;
     --gradient: linear-gradient(0deg, rgb(58, 184, 193) 0%, rgb(4, 19, 30) 100%);
+    --gradient-btn: linear-gradient(0deg, rgb(141, 219, 225) 0%, rgb(209, 213, 190) 100%);
     --shadow: 0px 0px 20px 0px rgba(90, 101, 195, 0.2);
-    --shadowSupport: 0 2rem 2rem 0 rgba(48, 54, 106, 0.3);
+    --shadowSupport: 0 1.2rem 1.2rem 0 rgb(229, 225, 225);
 }
 
 html, body{
@@ -32,9 +33,11 @@ html, body{
     color: var(--white);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding-top: 25%;
     background-repeat: no-repeat;
+    gap: 1rem;
 }
 
 .chai{
@@ -49,6 +52,28 @@ html, body{
 
 .hide{
     display: none;
+}
+
+.btn{
+    background: var(--gradient-btn);
+    padding: 1.6rem 3.2rem;
+    border-radius: 1rem;
+    border: none;
+    color: var(--helper-tint);
+    display: inline;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition:  all 0.3s ease 0s;
+    -moz-transition:  all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.btn:hover,
+.btn:active{
+    box-shadow: var(--shadowSupport);
 }
 
 

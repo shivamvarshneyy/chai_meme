@@ -2,11 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const chai = document.querySelector(".chai");
     const hover = document.querySelector(".hover-tea");
     const txt = document.querySelector(".txt");
+    const btn = document.querySelector(".btn");
 
     const sound = new Audio("./chai_garam.mp3");
     const hover_sound = new Audio("./garam_hain_garam_hain.mp3");
 
-    txt.addEventListener("click",()=>{
+    btn.addEventListener("click",()=>{
         txt.classList.add("hide");
         chai.classList.remove("hide");
     });
