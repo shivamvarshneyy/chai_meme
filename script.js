@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sound = new Audio("./chai_garam.mp3");
-    sound.play();
     const chai = document.querySelector(".chai");
     const hover = document.querySelector(".hover-tea");
 
+    const sound = new Audio("./chai_garam.mp3");
     const hover_sound = new Audio("./garam_hain_garam_hain.mp3");
 
     chai.addEventListener("mouseenter",()=>{
-        sound.pause;
+        sound.currentTime = 0;
         sound.play();
         sound.loop = true;
     });
@@ -21,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     hover.addEventListener("mouseleave",()=>{
         hover_sound.pause();
+        sound.currentTime = 0;
+        sound.play();
+        sound.loop = true;
     });
 
 });
