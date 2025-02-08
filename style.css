@@ -36,3 +36,9 @@ html, body{
     flex-direction: column;
     color:var(--white);
 }
+
+@media(max-width:500px){
+    .chai{
+        padding-top: 50%;
+    }
+}
