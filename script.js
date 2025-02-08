@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const hover_sound = new Audio("./garam_hain_garam_hain.mp3");
 
-    chai.addEventListener("load",()=>{
+    chai.addEventListener("mouseenter",()=>{
         sound.pause;
         sound.play();
         sound.loop = true;
